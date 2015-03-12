@@ -1,0 +1,176 @@
+<!doctype html>
+<html ng-app="main">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>Hello Amaze UI</title>
+
+  <!-- Set render engine for 360 browser -->
+  <meta name="renderer" content="webkit">
+
+  <!-- No Baidu Siteapp-->
+  <meta http-equiv="Cache-Control" content="no-siteapp"/>
+
+  <link rel="icon" type="image/png" href="assets/i/favicon.png">
+
+  <!-- Add to homescreen for Chrome on Android -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <link rel="icon" sizes="192x192" href="assets/i/app-icon72x72@2x.png">
+
+  <!-- Add to homescreen for Safari on iOS -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Amaze UI"/>
+  <link rel="apple-touch-icon-precomposed" href="assets/i/app-icon72x72@2x.png">
+
+  <!-- Tile icon for Win8 (144x144 + tile color) -->
+  <meta name="msapplication-TileImage" content="assets/i/app-icon72x72@2x.png">
+  <meta name="msapplication-TileColor" content="#0e90d2">
+
+  <link rel="stylesheet" href="assets/css/amazeui.min.css">
+  <link rel="stylesheet" href="assets/css/app.css">
+</head>
+<body ng-controller="mainController">
+
+<!--在这里编写你的代码-->
+<header>
+	<div class="am-container">
+		<h1 class="am-topbar-brand">
+			<a href="#">Amaze UI</a>
+		</h1>
+		<button class="am-topbar-btn am-topbar-toggle am-btn am-btn-sm am-btn-secondary am-show-sm-only" data-am-collapse="{target: '#collapse-head'}"><span class="am-sr-only">导航切换</span> <span class="am-icon-bars"></span></button>
+		<div class="am-collapse am-topbar-collapse" id="collapse-head">
+			<ul class="am-nav am-nav-pills am-topbar-nav">
+				<li class="am-active"><a href="#">首页</a></li>
+			</ul>
+			<div class="am-topbar-right">
+				<button class="am-btn am-btn-secondary am-topbar-btn am-btn-sm"><span class="am-icon-pencil"></span> 注册</button>
+			</div>
+			<div class="am-topbar-right">
+				<button class="am-btn am-btn-primary am-topbar-btn am-btn-sm"><span class="am-icon-user"></span> 登录</button>
+			</div>
+		</div>
+	</div>
+</header>
+<div id="tNav" data-am-sticky="">
+	<nav class="am-container">
+		<ul class="am-nav am-nav-pills">
+			<li><a href="/getting-started">帖子</a></li>
+			<li><a href="/getting-started">新闻</a></li>
+			<li><a href="/getting-started">学堂</a></li>
+			<li><a href="/getting-started">提问</a></li>
+			<li><a href="/getting-started">随记</a></li>
+			<li><a href="/getting-started">文娱</a></li>
+		</ul>
+	</nav>
+</div>
+<div id="tMain" class="am-container am-panel-group">
+	<div class="am-u-sm-12 am-u-md-6 am-u-lg-4">
+		<div data-am-widget="titlebar" class="am-titlebar am-titlebar-default">
+			<h2 class="am-titlebar-title ">今日热点</h2>
+			<nav class="am-titlebar-nav">
+				<a href="#more" class="">更多&raquo;</a>
+			</nav>
+		</div>
+		<ul class="am-list">
+		  <li><a href="#">每个人都有一个死角， 自己走不出来，别人也闯不进去。</a></li>
+		  <li><a href="#">我把最深沉的秘密放在那里。</a></li>
+		  <li><a href="#">你不懂我，我不怪你。</a></li>
+		  <li><a href="#">每个人都有一道伤口， 或深或浅，盖上布，以为不存在。</a></li>
+		</ul>
+	</div>
+	<div class="am-u-sm-12 am-u-md-6 am-u-lg-4">
+		<div data-am-widget="titlebar" class="am-titlebar am-titlebar-default">
+			<h2 class="am-titlebar-title ">最新</h2>
+			<nav class="am-titlebar-nav">
+				<a href="#more" class="">更多&raquo;</a>
+			</nav>
+		</div>
+		<ul class="am-list">
+		  <li><a href="#">每个人都有一个死角， 自己走不出来，别人也闯不进去。</a></li>
+		  <li><a href="#">我把最深沉的秘密放在那里。</a></li>
+		  <li><a href="#">你不懂我，我不怪你。</a></li>
+		  <li><a href="#">每个人都有一道伤口， 或深或浅，盖上布，以为不存在。</a></li>
+		</ul>
+	</div>
+	<div class="am-u-sm-12 am-u-md-6 am-u-lg-4">
+		<div data-am-widget="titlebar" class="am-titlebar am-titlebar-default">
+			<h2 class="am-titlebar-title ">我的关注</h2>
+			<nav class="am-titlebar-nav">
+				<a href="#more" class="">更多&raquo;</a>
+			</nav>
+		</div>
+		<ul class="am-list">
+		  <li><a href="#">每个人都有一个死角， 自己走不出来，别人也闯不进去。</a></li>
+		  <li><a href="#">我把最深沉的秘密放在那里。</a></li>
+		  <li><a href="#">你不懂我，我不怪你。</a></li>
+		  <li><a href="#">每个人都有一道伤口， 或深或浅，盖上布，以为不存在。</a></li>
+		</ul>
+	</div>
+	<div class="am-u-sm-12 am-u-md-6 am-u-lg-4">
+		<div data-am-widget="titlebar" class="am-titlebar am-titlebar-default">
+			<h2 class="am-titlebar-title ">java</h2>
+			<nav class="am-titlebar-nav">
+				<a href="#more" class="">更多&raquo;</a>
+			</nav>
+		</div>
+		<ul class="am-list">
+		  <li><a href="#">每个人都有一个死角， 自己走不出来，别人也闯不进去。</a></li>
+		  <li><a href="#">我把最深沉的秘密放在那里。</a></li>
+		  <li><a href="#">你不懂我，我不怪你。</a></li>
+		  <li><a href="#">每个人都有一道伤口， 或深或浅，盖上布，以为不存在。</a></li>
+		</ul>
+	</div>
+	<div class="am-u-sm-12 am-u-md-6 am-u-lg-4">
+		<div data-am-widget="titlebar" class="am-titlebar am-titlebar-default">
+			<h2 class="am-titlebar-title ">javascript</h2>
+			<nav class="am-titlebar-nav">
+				<a href="#more" class="">更多&raquo;</a>
+			</nav>
+		</div>
+		<ul class="am-list">
+		  <li><a href="#">每个人都有一个死角， 自己走不出来，别人也闯不进去。</a></li>
+		  <li><a href="#">我把最深沉的秘密放在那里。</a></li>
+		  <li><a href="#">你不懂我，我不怪你。</a></li>
+		  <li><a href="#">每个人都有一道伤口， 或深或浅，盖上布，以为不存在。</a></li>
+		</ul>
+	</div>
+	<div class="am-u-sm-12 am-u-md-6 am-u-lg-4">
+		<div data-am-widget="titlebar" class="am-titlebar am-titlebar-default">
+			<h2 class="am-titlebar-title ">javaweb</h2>
+			<nav class="am-titlebar-nav">
+				<a href="#more" class="">更多&raquo;</a>
+			</nav>
+		</div>
+		<ul class="am-list">
+		  <li><a href="#">每个人都有一个死角， 自己走不出来，别人也闯不进去。</a></li>
+		  <li><a href="#">我把最深沉的秘密放在那里。</a></li>
+		  <li><a href="#">你不懂我，我不怪你。</a></li>
+		  <li><a href="#">每个人都有一道伤口， 或深或浅，盖上布，以为不存在。</a></li>
+		</ul>
+	</div>
+</div>
+<div style="height: 1000px;"></div>
+<!--[if lte IE 8 ]>
+<script src="http://libs.baidu.com/jquery/1.11.1/jquery.min.js"></script>
+<![endif]-->
+<script src="sea-modules/sea.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	// seajs 的简单配置
+	seajs.config({
+		alias: {
+			"jquery": "jquery.min.js",
+			"angularjs" : "angular.js",
+			"amazeui" : "amazeui.min.js"
+  		}
+  	});
+  	seajs.use("jquery");
+  	seajs.use("amazeui");
+  	seajs.use("main");
+</script>
+</body>
+</html>
