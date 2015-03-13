@@ -329,3 +329,36 @@ gallery.html css
   width: 200px;
   margin: 0 auto;
 }
+
+/*
+ index
+ * */
+
+.admin-content{
+	padding: 20px;
+	font-size: 1.4rem;
+}
+.admin-content .am-titlebar{
+	margin-bottom: 1.6rem;
+}
+.admin-fastnav{
+	list-style: none;
+	overflow: hidden;
+}
+.admin-fastnav>li{
+	float: left;
+	margin-right: 20px;
+}
+.admin-fastnav>li.active a,
+.admin-fastnav>li>a:hover{
+	background-color: #0e90d2;
+	color: #F2F2F2;
+}
+.admin-fastnav>li>a{
+	padding-left: 20px;
+	padding-right: 20px;
+	height: 35px;
+	line-height: 35px;
+	display: inline-block;
+	
+}

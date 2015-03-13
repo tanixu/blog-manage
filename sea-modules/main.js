@@ -1,6 +1,7 @@
 define(function(require, exports, module) {
 	var angular = require("angularjs");
-	var $ = require("jquery.min.js");
+	var $ = require("jquery");
+	var type_manage = require("system/type_manage");
 	var main = angular.module("main",[]);
 	
 	main.controller("mainController",['$scope', '$http',
@@ -10,10 +11,19 @@ define(function(require, exports, module) {
 //			}).error(function(){
 //				//alert('error');
 //			});
-			$http.get("assets/json/index-nav.json").success(function(data){
-				$scope.navList = data;
+			$("#link").click(function(){
+//				$(this).closest().find("li").removeClass("active");
+//				$(this).addClass("active");
+				alert('a');
 			})
 		}
 	])
+	main.config(["$routeProvider", function($routeProvider) {
+		$routeProvider
+			.when("/main", {templateUrl: "views/main.html"})
+			.when("/system/type_manage", {templateUrl: "views/system/type_manage.html"})
+			.otherwise({redirectTo : "/main"})
+	}]);
+	
 	module.exports = main;
 });
