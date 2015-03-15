@@ -1,5 +1,5 @@
 <!doctype html>
-<html ng-app="main">
+<html>
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -31,8 +31,8 @@
   <meta name="msapplication-TileImage" content="assets/i/app-icon72x72@2x.png">
   <meta name="msapplication-TileColor" content="#0e90d2">
 
-  <link rel="stylesheet" href="resource/css/amazeui.css">
-  <link rel="stylesheet" href="resource/css/index.css">
+  <link rel="stylesheet" type="text/css" href="lib/amazeui/css/amazeui.min.css"/>
+  <link rel="stylesheet" type="text/css" href="styles/index.css"/>
 </head>
 <body ng-controller="mainController">
 
@@ -112,19 +112,22 @@
 <!--[if lte IE 8 ]>
 <script src="http://libs.baidu.com/jquery/1.11.1/jquery.min.js"></script>
 <![endif]-->
-<script src="sea-modules/sea.js" type="text/javascript" charset="utf-8"></script>
+<script src="lib/sea.js" type="text/javascript" charset="utf-8"></script>
+<script src="lib/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="lib/angular.js" type="text/javascript" charset="utf-8"></script>
 <script type="text/javascript">
-	// seajs 的简单配置
+//	// seajs 的简单配置
 	seajs.config({
+		base:"./",
 		alias: {
-			"jquery": "jquery.min.js",
-			"angularjs" : "angular.js",
-			"amazeui" : "amazeui.min.js"
-  		}
-  	});
-  	seajs.use("jquery");
-  	seajs.use("amazeui");
-  	seajs.use("main");
+			"jquery": "lib/jquery.min.js",
+			"angularjs" : "lib/angular.js",
+			"amazeui" : "lib/amazeui/js/amazeui.min.js"
+		}
+	});
+	seajs.use("jquery");
+	seajs.use("amazeui");
+  	seajs.use("scripts/main");
 </script>
 </body>
 </html>
